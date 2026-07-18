@@ -4,43 +4,18 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Play, Calendar, Mail, BarChart2 } from "lucide-react";
+import Navbar from "./ui/Navbar";
 
 export default function HeroSection() {
   return (
     <div className="relative min-h-screen w-full bg-[#49bbbd] overflow-hidden px-4 pt-6 sm:px-8 lg:px-16">
-      
+
       {/* 1. Navbar */}
-      <nav className="mx-auto flex max-w-7xl items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center gap-2 text-2xl font-bold text-white tracking-wider">
-          <div className="relative flex h-10 w-10 items-center justify-center border-2 border-white/40 rotate-45 rounded-sm">
-            <span className="-rotate-45 text-sm">TOTC</span>
-          </div>
-        </div>
-
-        {/* Nav Links (Desktop) */}
-        <div className="hidden items-center gap-8 text-white/90 md:flex font-medium text-sm">
-          <Link href="#" className="hover:text-white transition">Home</Link>
-          <Link href="#" className="hover:text-white transition">Courses</Link>
-          <Link href="#" className="hover:text-white transition">Careers</Link>
-          <Link href="#" className="hover:text-white transition">Blog</Link>
-          <Link href="#" className="hover:text-white transition">About Us</Link>
-        </div>
-
-        {/* Auth Buttons */}
-        <div className="flex items-center gap-4">
-          <button className="rounded-full bg-white px-7 py-2.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition">
-            Login
-          </button>
-          <button className="rounded-full bg-white/20 px-7 py-2.5 text-sm font-medium text-white hover:bg-white/30 transition">
-            Sign Up
-          </button>
-        </div>
-      </nav>
+      {/* <Navbar backgroundColor="bg-[#49bbbd]" /> */}
 
       {/* 2. Hero Content */}
       <div className="mx-auto mt-12 flex max-w-7xl flex-col items-center justify-between gap-12 pb-32 lg:mt-20 lg:flex-row lg:pb-0">
-        
+
         {/* Left Content */}
         <div className="w-full text-center lg:w-1/2 lg:text-left z-10">
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-[54px]">
@@ -50,7 +25,7 @@ export default function HeroSection() {
           <p className="mt-6 max-w-md text-sm leading-relaxed text-white/90 mx-auto lg:mx-0">
             TOTC is an interesting platform that will teach you in more an interactive way
           </p>
-          
+
           {/* CTA Buttons */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6 lg:justify-start">
             <button className="rounded-full bg-white/30 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/40 transition">
